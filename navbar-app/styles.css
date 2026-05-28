@@ -1,0 +1,108 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef3f8;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem 2rem;
+}
+
+/* Main navbar container */
+.nav-center {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* ===== LINKS ===== */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #49a6e9;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #49a6e9;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1b6ca8;
+}
+
+/* ===== TOGGLE BUTTON ===== */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #49a6e9;
+  cursor: pointer;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+  .nav-center {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .links,
+  .social-icons {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
